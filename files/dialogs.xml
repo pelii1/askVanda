@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<dialogs>
+    <dialog>
+        <answer>5000ft</answer>
+        <question>Mennyi az egyenlegem?</question>
+    </dialog>
+    <dialog>
+        <answer>Televízió, és telefon.</answer>
+        <question>Milyen szolgáltatásaim vannak?</question>
+    </dialog>
+</dialogs>

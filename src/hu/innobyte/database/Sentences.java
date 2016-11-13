@@ -10,7 +10,7 @@ import javax.xml.bind.Unmarshaller;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 
-import hu.innobyte.question.Dialogs;
+import hu.innobyte.question.Answers;
 
 @XmlRootElement(name = "sentences")
 public class Sentences {

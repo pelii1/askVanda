@@ -15,16 +15,18 @@ import hu.innobyte.checker.CheckerFactory;
 import hu.innobyte.checker.checkers.CheckerInitData;
 import hu.innobyte.checker.checkers.CheckerType;
 import hu.innobyte.interpreter.SentenceInterpreter;
-import hu.innobyte.question.DialogException;
-import hu.innobyte.question.Dialogs;
+import hu.innobyte.question.AnswerException;
+import hu.innobyte.question.Answers;
 import hu.innobyte.rest.ErrorResponse;
 import hu.innobyte.rest.RestRequest;
 import hu.innobyte.rest.RestResponse;
 
 @Path("/")
 public class VandaService {
-	private static final String DIALOGS_FILE = "files//dialogs.xml";
+	private static final String ANSWERS_FILE = "files//answers.xml";
 	private static final String WORDS = "files//words.txt";
+	private static final String QUESTIONS_FILE = "files//questions.xml";
+
 	
 	
 	@Context
@@ -53,12 +55,12 @@ public class VandaService {
 			
 			String requestText = sentenceInterpreter.normalizeSentence(restRequest.getQueryText());
 			
-			Dialogs dialogs = Dialogs.loadFromFile(application.getRealPath("/") + "//" + DIALOGS_FILE);
+			Answers answers = Answers.loadFromFile(application.getRealPath("/") + "//" + ANSWERS_FILE);
 			
 			try {
-				jsonObject = RestResponse.createOkResponse(dialogs.getAnswer(requestText));
+				jsonObject = RestResponse.createOkResponse(answers.getAnswer(requestText,application.getRealPath("/") + "//" + QUESTIONS_FILE));
 			}
-			catch (DialogException e) {
+			catch (AnswerException e) {
 				jsonObject = RestResponse.createErrorResponse(String.format(ErrorResponse.UnknowQuestion.getErrorResponseMessage(),requestText));
 			}
 			

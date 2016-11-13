@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<sentences>
+    <sentence>
+        <confidence>55.0</confidence>
+        <id>A01</id>
+        <sentence>He?</sentence>
+    </sentence>
+    <sentence>
+        <confidence>85.0</confidence>
+        <id>A02</id>
+        <sentence>HeHee</sentence>
+    </sentence>
+</sentences>

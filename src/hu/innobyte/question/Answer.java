@@ -14,12 +14,13 @@ import lombok.experimental.Tolerate;
 @Getter
 @Setter
 @Builder
-public class Dialog {
-    private String question;
+public class Answer {
+    private String id;
     private String answer;
+    private int confidence;
 
     @Tolerate
-    public Dialog() {
+    public Answer() {
 
     }
 }

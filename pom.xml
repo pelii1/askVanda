@@ -55,6 +55,11 @@
   		<artifactId>sentencechecker</artifactId>
   		<version>0.1</version>
   	</dependency>
+  	<dependency>
+  		<groupId>hu.innobyte</groupId>
+  		<artifactId>sentenceinterpreter</artifactId>
+  		<version>0.1</version>
+  	</dependency>
   </dependencies>
   <build>
     <sourceDirectory>src</sourceDirectory>

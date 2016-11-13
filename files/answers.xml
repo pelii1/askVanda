@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<answers>
+    <answer>
+        <answer>A számal tartozásod 15000ft</answer>
+        <confidence>0</confidence>
+        <id>SZAMLAEGYENLEG</id>
+    </answer>
+    <answer>
+        <answer>A telefonszámod: 06-30-7777-777</answer>
+        <confidence>0</confidence>
+        <id>SZAMLEKERDEZES</id>
+    </answer>
+    <answer>
+        <answer>Telefon és internet előfizetéssel rendelkezel</answer>
+        <confidence>0</confidence>
+        <id>SZOLGALTATASLEKERDEZES</id>
+    </answer>
+</answers>
